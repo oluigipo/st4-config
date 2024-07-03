@@ -1,0 +1,8 @@
+[
+	{
+        "command": "select_to_mark",
+    },
+    {
+        "command": "left_delete"
+    }
+]

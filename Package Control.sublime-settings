@@ -1,0 +1,16 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Dracula Color Scheme",
+		"Hungry Backspace",
+		"LSP",
+		"LSP-clangd",
+		"Move By Paragraph",
+		"Odin",
+		"Package Control",
+	],
+}

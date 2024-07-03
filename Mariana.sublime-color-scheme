@@ -1,0 +1,151 @@
+// Documentation at https://www.sublimetext.com/docs/color_schemes.html
+{
+	"variables":
+	{
+		"black": "rgb(15, 15, 15)",
+        "black2": "rgb(30, 30, 30)",
+        "yellow": "rgb(226, 226, 118)",
+        "red2": "rgb(220, 117, 117)",
+        "blue": "rgb(0, 210, 221)",
+        "blue-vibrant": "rgb(0, 210, 221)",
+        "blue2": "rgb(0, 210, 221)",
+        "blue3": "rgb(0, 210, 221)",
+        "blue4": "rgb(0, 210, 221)",
+        "blue5": "rgb(0, 210, 221)",
+        "blue6": "rgb(0, 210, 221)",
+        "green": "rgb(0, 221, 122)",
+        "purple": "rgb(155, 81, 173)",
+        "pink": "rgb(255, 76, 243)",
+        "white": "rgb(204, 204, 204)",
+        "white2": "rgb(187, 187, 187)",
+        "white3": "rgb(128, 128, 128)",
+        "gray": "rgb(125, 125, 125)",
+	},
+	"globals":
+	{
+        "background": "var(black)",
+        "foreground": "var(white)",
+        "accent": "var(white2)",
+        "caret": "var(white2)",
+        "line_highlight": "var(black2)",
+        "selection": "color(var(white2) alpha(0.5))",
+        "selection_border": "var(white2)",
+        "inactive_selection": "var(blue2)",
+        "misspelling": "var(red)",
+        "shadow": "color(var(black) alpha(0.25))",
+        "active_guide": "var(white)",
+        "stack_guide": "color(var(white) alpha(0.5))",
+        "highlight": "var(white)",
+        "find_highlight_foreground": "var(grey)",
+        "find_highlight": "var(orange3)",
+        "brackets_options": "underline",
+        "brackets_foreground": "var(orange)",
+        "bracket_contents_options": "underline",
+        "bracket_contents_foreground": "var(white)",
+        "tags_options": "stippled_underline",
+        "tags_foreground": "var(pink)"
+	},
+	"rules":
+	[
+
+        {
+            "name": "Comment",
+            "scope": "comment, punctuation.definition.comment",
+            "foreground": "var(gray)"
+        },
+        {
+            "name": "String",
+            "scope": "string",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "Operators",
+            "scope": "keyword.operator",
+            "foreground": "var(red2)"
+        },
+        {
+            "name": "Library class/type",
+            "scope": "support.type, support.class",
+            "foreground": "var(green)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Built-in constant",
+            "scope": "constant.language",
+            "foreground": "var(pink)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Punctuation",
+            "scope": "punctuation.definition - punctuation.definition.numeric.base",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "Number Suffix",
+            "scope": "storage.type.numeric",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Storage",
+            "scope": "storage",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Storage type",
+            "scope": "storage.type",
+            "foreground": "var(pink)",
+        },
+        {
+            "name": "Entity name",
+            "scope": "entity.name - (entity.name.section | entity.name.tag | entity.name.label)",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Punctuation",
+            "scope": "punctuation.separator, punctuation.terminator",
+            "foreground": "var(white)"
+        },
+
+        {
+            "scope": "meta.semantic-token.keyword,meta.semantic-token.modifier",
+            "foreground": "var(pink)"
+        },
+        {
+            "scope": "meta.semantic-token.type,meta.semantic-token.struct,meta.semantic-token.class,meta.semantic-token.enum",
+            "foreground": "var(green)"
+        },
+        {
+            "scope": "meta.semantic-token.parameter,meta.semantic-token.variable,meta.semantic-token.property",
+            "foreground": "var(white)"
+        },
+        {
+            "scope": "meta.semantic-token.enummember",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Accessor",
+            "scope": "punctuation.accessor",
+            "foreground": "var(red2)"
+        },
+        {
+            "scope": "meta.semantic-token.macro",
+            "foreground": "var(purple)"
+        },
+        {
+            "scope": "meta.semantic-token.function,meta.semantic-token.method",
+            "foreground": "var(blue)",
+        },
+
+
+        {
+            "name": "markup code",
+            "scope": "markup.raw",
+            "background": "color(var(white2) alpha(0.38))"
+        },
+        {
+            "name": "markup code",
+            "scope": "markup.raw.inline",
+            "background": "color(var(white2) alpha(0.5))"
+        },
+	]
+}

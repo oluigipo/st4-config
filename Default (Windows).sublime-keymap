@@ -1,0 +1,42 @@
+[
+	{"keys": ["ctrl+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false}},
+	{"keys": ["ctrl+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true}},
+	{"keys": ["shift+ctrl+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false, "extend": true}},
+	{"keys": ["shift+ctrl+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true, "extend": true}},
+	{ "keys": ["ctrl+o"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true, "goto_anything_file_preview": false} },
+	{ "keys": ["alt+up"], "command": "swap_line_up" },
+	{ "keys": ["alt+down"], "command": "swap_line_down" },
+	{ "keys": ["alt+backspace"], "command": "run_macro_file", "args": {"file": "Packages/User/delete_subword.sublime-macro"} },
+	{ "keys": ["alt+delete"], "command": "run_macro_file", "args": {"file": "Packages/User/delete_subword_forward.sublime-macro"} },
+	{ "keys": ["ctrl+r"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+
+	{"keys": ["ctrl+space"], "command": "set_mark"},
+	{"keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "Packages/User/actual_delete_to_mark.sublime-macro"} },
+	{"keys": ["ctrl+x"], "command": "cut", "context": [
+		{ "key": "selection_empty", "operator": "equal", "operand": false },
+	]},
+	{"keys": ["ctrl+x"], "command": "run_macro_file", "args": {"file": "Packages/User/cut_to_mark.sublime-macro"},
+		"context": [
+		{ "key": "selection_empty", "operator": "equal", "operand": true },
+	]},
+	{"keys": ["ctrl+c"], "command": "copy", "context": [
+		{ "key": "selection_empty", "operator": "equal", "operand": false },
+	]},
+	{"keys": ["ctrl+c"], "command": "run_macro_file", "args": {"file": "Packages/User/copy_to_mark.sublime-macro"},
+		"context": [
+		{ "key": "selection_empty", "operator": "equal", "operand": true },
+	]},
+
+	{ "keys": ["ctrl+,"], "command": "focus_neighboring_group" },
+	{ "keys": ["ctrl+q"], "command": "duplicate_line" },
+	{ "keys": ["ctrl+e"], "command": "show_at_center" },
+	{ "keys": ["ctrl+p"], "command": "lsp_symbol_definition", "args": {"group": 1, "force_group": false, "side_by_side": true}},
+	{ "keys": ["ctrl+tab"], "command": "auto_complete" },
+	{ "keys": ["ctrl+tag"], "command": "move", "args": {"by": "lines", "forward": true}, "context":
+		[
+			{ "key": "auto_complete_primed", "operator": "equal", "operand": true },
+		]
+	},
+	{ "keys": ["ctrl+m"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+	{ "keys": ["ctrl+n"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
+]

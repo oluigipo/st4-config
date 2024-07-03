@@ -1,0 +1,27 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+	"font_face": "Liberation Mono",
+	"block_caret": true,
+	"default_line_ending": "unix",
+	"auto_complete": true,
+	"auto_complete_commit_on_tab": true,
+	"auto_complete_include_snippets": false,
+	"drag_text": false,
+	// "hardware_acceleration": "opengl",
+	"font_size": 9,
+	"gutter": true,
+	"font_options": ["no_italic","dwrite_cleartype_gdi"],
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"color_scheme": "auto",
+	"theme": "Default Dark.sublime-theme",
+	"index_files": true,
+	"dark_color_scheme": "Mariana.sublime-color-scheme",
+	"light_color_scheme": "Mariana.sublime-color-scheme",
+	"index_exclude_patterns": ["*.log", ".git", ".vscode", "build/*"],
+	"auto_complete_delay": 0,
+	"goto_anything_file_preview": false,
+}
