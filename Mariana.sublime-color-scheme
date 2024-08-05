@@ -78,7 +78,7 @@
         {
             "name": "Punctuation",
             "scope": "punctuation.definition - punctuation.definition.numeric.base",
-            "foreground": "var(yellow)"
+            "foreground": "var(white)"
         },
         {
             "name": "Number Suffix",
@@ -105,27 +105,37 @@
             "scope": "punctuation.separator, punctuation.terminator",
             "foreground": "var(white)"
         },
+        {
+            "name": "Accessor",
+            "scope": "punctuation.accessor",
+            "foreground": "var(red2)"
+        },
+        {
+            "name": "Entity name",
+            "scope": "entity.name.function",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Function argument",
+            "scope": "variable.parameter",
+            "foreground": "var(white)"
+        },
 
         {
             "scope": "meta.semantic-token.keyword,meta.semantic-token.modifier",
             "foreground": "var(pink)"
         },
         {
-            "scope": "meta.semantic-token.type,meta.semantic-token.struct,meta.semantic-token.class,meta.semantic-token.enum",
+            "scope": "meta.semantic-token.type,meta.semantic-token.struct,meta.semantic-token.class,meta.semantic-token.enum,meta.semantic-token.interface,meta.semantic-token.typeparameter",
             "foreground": "var(green)"
         },
         {
-            "scope": "meta.semantic-token.parameter,meta.semantic-token.variable,meta.semantic-token.property",
+            "scope": "meta.semantic-token.parameter,meta.semantic-token.variable,meta.semantic-token.property,meta.semantic-token.namespace",
             "foreground": "var(white)"
         },
         {
             "scope": "meta.semantic-token.enummember",
             "foreground": "var(orange)"
-        },
-        {
-            "name": "Accessor",
-            "scope": "punctuation.accessor",
-            "foreground": "var(red2)"
         },
         {
             "scope": "meta.semantic-token.macro",

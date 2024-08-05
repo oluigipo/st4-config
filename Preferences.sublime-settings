@@ -24,4 +24,5 @@
 	"index_exclude_patterns": ["*.log", ".git", ".vscode", "build/*"],
 	"auto_complete_delay": 0,
 	"goto_anything_file_preview": false,
+	"inactive_sheet_dimming": false,
 }
