@@ -39,4 +39,9 @@
 	},
 	{ "keys": ["ctrl+m"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
 	{ "keys": ["ctrl+n"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
+	{ "keys": ["ctrl+t"], "command": "terminus_open", "args": {"cwd": "${file_path:${folder}}"} },
+	{ "keys": ["ctrl+1"], "command": "move_to_neighboring_group", "args": {"forward": false} },
+	{ "keys": ["ctrl+2"], "command": "move_to_neighboring_group" },
+	{ "keys": ["alt+x"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
+	{ "keys": ["alt"], "command": "dummy" },
 ]

@@ -25,4 +25,9 @@
 	"auto_complete_delay": 0,
 	"goto_anything_file_preview": false,
 	"inactive_sheet_dimming": false,
+	"update_check": false,
+	"show_encoding": true,
+	"show_line_endings": true,
+	"index_exclude_gitignore": false,
+	"show_tab_close_buttons": false,
 }

@@ -1,7 +1,6 @@
 import sublime_plugin
 
 class ClearSelectionsCommand(sublime_plugin.TextCommand):
-
     def run(self, edit):
         """Clear all selelections and keep carets."""
         sel = self.view.sel()
@@ -10,3 +9,7 @@ class ClearSelectionsCommand(sublime_plugin.TextCommand):
             sel.clear()
             for caret in carets:
                 sel.add(caret)
+
+class DummyCommand(sublime_plugin.ApplicationCommand):
+    def run(self):
+        pass
